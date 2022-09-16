@@ -1,0 +1,7 @@
+{
+  "name": "@wcd/giselaraquel.lwc-l84slbb8",
+  "version": "0.0.0",
+  "scripts": {
+    "serve": "npx wcd-cli@latest serve nC8VDNRbpVYAmSySQ9vK --open"
+  }
+}

@@ -1,0 +1,28 @@
+<template>
+  <lightning-card title="Empresa" >
+			<div class="slds-p-around_medium">
+				<h1>Dados da Empresa</h1>
+        <p>Empresa: {empresa}</p>
+				<p>CNPJ: {cnpj}</p>
+				<p>Endereço: {endereco}</p>
+			</div>
+		<template if:false={visivel}>
+			<div class="slds-p-around_medium">
+				<h1>Dados do Produto</h1>
+				<p>Nome do produto: {produto}</p>
+				<p>Descrição: {descricao} </p>
+				<p>Preço: R${preco}</p>
+			</div>
+		</template>
+    		<template if:false={visivel}>
+			<div class="slds-p-around_medium">
+				<h1>Promoções</h1>
+				<p>Promoção: {promocao}</p>
+				<p>Primeira Oferta: {oferta1} </p>
+				<p>Segunda Oferta: {oferta2}</p>
+			</div>
+		</template>
+		<lightning-button variant="destructive" label="Alternar" title="Destructive action" onclick={onClick} class="slds-m-left_x-small">
+		</lightning-button>
+	</lightning-card>
+</template>
